@@ -548,7 +548,8 @@ By understanding and effectively managing seasonal trends, wholesale liquor dist
 
 #### 5.3. Fluctuations between order quantity and average order value
 <img src="https://i.imgur.com/k1AlUEt.png">
-There were a total of 3885075 wine order, of which:
+
+There were a total of 3,885,075 wine order, of which:
 - Overall Trend: The total number of invoices shows a gradual increase from the beginning of the year, with notable spikes in mid-year (particularly in June) and again towards the end of the year (December).
 - Correlation: There is a clear correlation between revenue and order volume. Months with higher invoice numbers tend to coincide with increased revenue, suggesting a linear relationship between these two metrics.
 
