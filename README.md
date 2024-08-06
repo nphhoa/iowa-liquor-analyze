@@ -69,15 +69,6 @@ RFM Customer Segmentation helps businesses better understand their customers, ta
 | Volume Sold (Gallons)  | Total volume of liquor ordered in gallons. (i.e. (Bottle Volume (ml) x Bottles Sold)/3785.411784)                                   |
 
 - Overview
-<img src="https://i.imgur.com/ardb5Lz.png">
-- Load dataset into dataframe using Pandas
-- Explore number of columns, rows, ranges of values
-- Handle missing, incorrect and invalid data
-- Perform any additional steps
-
-### 2. Customer Segmentation Using Machine Learning
-
-#### 2.1. Summary Dataset
 
 | Invoice/Item Number | Date       | Store Number | Store Name                      | Address                        | City        | Zip Code | Store Location                     | County Number | County | Category   | Category Name          | Vendor Number | Vendor Name        | Item Number | Item Description         | Pack | Bottle Volume (ml) | State Bottle Cost | State Bottle Retail | Bottles Sold | Sale (Dollars) | Volume Sold (Liters) | Volume Sold (Gallons) | Iowa ZIP Code Tabulation Areas | Iowa Watershed Sub-Basins (HUC 08) | Iowa Watersheds (HUC 10) | County Boundaries of Iowa | US Counties |
 |---------------------|------------|--------------|--------------------------------|--------------------------------|-------------|----------|-------------------------------------|----------------|--------|------------|------------------------|---------------|--------------------|-------------|--------------------------|------|--------------------|-------------------|--------------------|--------------|----------------|-----------------------|------------------------|--------------------------------|------------------------------------|---------------------------|----------------------------|-------------|
@@ -87,6 +78,28 @@ RFM Customer Segmentation helps businesses better understand their customers, ta
 | 3908281             | 06/30/2024 | 4622         | QUIK TRIP 544 / 14TH DM        | 3941 SE 14TH ST                | DES MOINES  | 50320.0  | POINT (-93.5610794 41.54882999)    | 25.0           | POLK   | 1081600    | WHISKEY LIQUEUR         | 421           | SAZERAC COMPANY INC | 64864       | FIREBALL CINNAMON WHISKEY | 24   | 375                | 5.33              | 8.00               | 9            | 72.0           | 3.37                  | 0.89                   | 483.0                          | 29.0                               | 356.0                     | 64.0                       | 1878.0      |
 | 3908282             | 06/30/2024 | 5409         | CASEY'S GENERAL STORE # 2179 / WAUKEE | 1995 SE UNIVERSITY | WAUKEE      | 50263.0  | POINT (-93.87137387 41.600519943)  | 25.0           | POLK   | 1022100    | MIXTO TEQUILA           | 395           | PROXIMO            | 87408       | JOSE CUERVO ESPECIAL SILVER | 12   | 750                | 12.00             | 18.00              | 3            | 54.0           | 2.25                  | 0.59                   | 155.0                          | 27.0                               | 332.0                     | 62.0                       | 1746.0      |
 
+- Load dataset into dataframe using Pandas
+- Explore number of columns, rows, ranges of values
+- Handle missing, incorrect and invalid data
+- Perform any additional steps
+
+### 2. Customer Segmentation Using Machine Learning
+
+#### 2.1. Summary Dataset
+```
+df.shape
+```
+> (3885075, 25)
+```
+df.head()
+```
+| Invoice Number     | Order Date | Store Number | Store Name                              | Address               | City        | Zip Code | County | Category | Category Name        | Vendor Number | Vendor Name           | Item Number | Product Name                     | Pack | Bottle Volume (ml) | State Bottle Cost | State Bottle Retail | Bottles Sold | Sale (Dollars) | Volume Sold (Liters) | Volume Sold (Gallons) | US Counties | Store Longitude | Store Latitude |
+|--------------------|------------|--------------|-----------------------------------------|-----------------------|-------------|----------|--------|----------|----------------------|---------------|-----------------------|-------------|----------------------------------|------|--------------------|-------------------|---------------------|--------------|----------------|-----------------------|------------------------|-------------|-----------------|----------------|
+| INV-54554500001    | 2023-01-02 | 5245         | BEST TRIP                               | 1516, SE 1ST ST       | DES MOINES  | 50315    | POLK   | 1022200  | 100% AGAVE TEQUILA   | 260           | DIAGEO AMERICAS       | 89177       | CASAMIGOS REPOSADO 750 (ml)      | 6    | 750                | 29.99             | 44.99               | 3            | 134.97         | 2.25                  | 0.59                   | 1878        | -93.61379       | 41.57608      |
+| INV-54554700023    | 2023-01-02 | 6303         | WORLD LIQUOR & TOBACCO + VAPORS / DES MOINES | 3200 SOUTHEAST 14TH STREET | DES MOINES  | 50320    | POLK   | 1022100  | MIXTO TEQUILA        | 395           | PROXIMO               | 89193       | JOSE CUERVO ESPECIAL REPOSADO 200 (ml) | 48   | 200                | 3.63              | 5.45                | 48           | 261.60         | 9.60                  | 2.53                   | 1878        | -93.59738       | 41.55503      |
+| INV-54554700003    | 2023-01-02 | 6303         | WORLD LIQUOR & TOBACCO + VAPORS / DES MOINES | 3200 SOUTHEAST 14TH STREET | DES MOINES  | 50320    | POLK   | 1012200  | SCOTCH WHISKIES      | 260           | DIAGEO AMERICAS       | 4626        | BUCHANAN DELUXE 12YR 750 (ml)    | 12   | 750                | 20.99             | 31.49               | 12           | 377.88         | 9.00                  | 2.37                   | 1878        | -93.59738       | 41.55503      |
+| INV-54554100007    | 2023-01-02 | 2190         | CENTRAL CITY 2 #1460                    | 1460 2ND AVE          | DES MOINES  | 50314    | POLK   | 1032100  | IMPORTED VODKAS      | 978           | W J DEUTSCH & SONS LTD | 34598       | LUKSUSOWA VODKA 1750 (ml)        | 6    | 1750               | 14.84             | 22.26               | 6            | 130.50         | 10.50                 | 2.77                   | 1878        | -93.61979       | 41.60058      |
+| INV-54554300002    | 2023-01-02 | 2699         | HY-VEE C-STORE #2 - ANKENY              | 1710 SW ORALABOR ROAD | ANKENY      | 50023    | POLK   | 1031100  | AMERICAN VODKAS      | 301           | FIFTH GENERATION INC  | 38176       | TITO'S HANDMADE VODKA 750 (ml)   | 12   | 750                | 10.00             | 15.00               | 24           | 360.00         | 18.00                 | 4.75                   | 1878        | -93.62362       | 41.70324      |
 #### 2.2. Calculate RFM
 ```
 # Assign the current date (the date of performing the task) 
