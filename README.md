@@ -483,8 +483,8 @@ Strategy: Develop targeted campaigns to nurture loyalty and encourage higher spe
 
 🖇 See entire source code at RFM_analyze.
 
-### Sales Analysis
-#### 1. Overview of Iowa’s wholesale liquor situation
+### 5. Sales Analysis
+#### 5.1. Overview of Iowa’s wholesale liquor situation
 <img src="https://i.imgur.com/6WEeGEi.png ">
 
 Observations:
@@ -503,7 +503,7 @@ Strategic Insights:
 - Seasonal Opportunities: The significant revenue peaks towards the end of the year suggest that businesses should prepare for increased demand during the holiday season by optimizing inventory and enhancing promotional activities.
 - Maintain Efficiency: The stable profit margins reflect effective operational practices. Maintaining this efficiency will be crucial for sustaining profitability as revenue grows.
 >💡While the overall trend in wholesale liquor sales in Iowa in 2023 is positive, there is room for further optimization of profit. A deeper dive into the monthly growth patterns reveals insights that can guide strategic decision-making.
-#### 2. Overall Growth Trends in Wholesale Liquor Sales
+#### 5.2. Overall Growth Trends in Wholesale Liquor Sales
 *Overall Growth*
 - General Trend: The chart shows an increasing trend in the growth rate throughout 2023, followed by fluctuations in 2024.
 - Fluctuations: There are significant fluctuations in the monthly growth rate, indicating varying performance across different months in both 2023 and 2024.
@@ -546,7 +546,7 @@ The provided chart and analysis clearly demonstrate the significant impact of se
 
 By understanding and effectively managing seasonal trends, wholesale liquor distributors in Iowa can maximize sales, optimize inventory costs, and maintain a competitive edge throughout the year. Leveraging data-driven insights and implementing strategic initiatives can lead to improved profitability and long-term success.
 
-#### 3. Fluctuations between order quantity and average order value
+#### 5.3. Fluctuations between order quantity and average order value
 <img src="https://i.imgur.com/k1AlUEt.png">
 There were a total of 3885075 wine order, of which:
 - Overall Trend: The total number of invoices shows a gradual increase from the beginning of the year, with notable spikes in mid-year (particularly in June) and again towards the end of the year (December).
@@ -581,7 +581,7 @@ Unlike the order volume, the average order value does not exhibit a strong seaso
 
 Understanding the relationship between revenue, order volume, and average order value is crucial for wholesale liquor distributors in Iowa. By analyzing these trends and implementing targeted strategies, distributors can optimize inventory management, reduce costs, and drive profitable growth.
 
-#### 4. Customer behavior by month
+#### 5.4. Customer behavior by month
 <img src="https://i.imgur.com/7z8MSSX.png">
 We currently have a total of 2,158 customers. The number of active customers per month remains relatively high throughout 2023 and the before half of 2024, ranging from approximately 1,800 to 1,900 customers per month.
 
@@ -599,7 +599,7 @@ This could be predicted for the following reasons:
 - July to December 2023: The stability in customer retention rates suggests that Iowa's wine distribution system is operating effectively.
 - January to June 2024: Steady growth, especially in June 2024, may be due to improved customer service strategies or effective promotions.
 
-#### 5. Top 5 Customers with Highest and Lowest Profit
+#### 5.5. Top 5 Customers with Highest and Lowest Profit
 <img src="https://i.imgur.com/YNQNR8E.png">
 HY-VEE #3 and CENTRAL CITY 2 are the top two profit-generating customers, exceeding the 8 million dollar from 2023 to 30/6/2024.
 
@@ -607,7 +607,7 @@ HY-VEE #3 and CENTRAL CITY 2 are the top two profit-generating customers, exceed
 
 On the other hand, there are customers who seem to only purchase once and show no signs of returning, as evidenced by the extremely low profit generated from these customers. Examples include SOUTHERN GLAZERS WINE & SPIRITS with less than 50 and Makil's #2 with aroud 150.
 
-#### 6. Revenue and Profit Trends by Customer Segment
+#### 5.6. Revenue and Profit Trends by Customer Segment
 <img src="https://i.imgur.com/hZ2GqwH.png">
 
 An analysis of the two charts reveals a strong adherence to the Pareto principle, where 23% of customers, categorized as "Champions," generate 74% of the total profit. While the overall business performance is positive with a consistent upward trend, stable monthly active customers, and a high retention rate, the reliance on a small group of high-profit customers highlights the need to improve profitability across the customer base.
@@ -617,7 +617,7 @@ An analysis of the two charts reveals a strong adherence to the Pareto principle
 - Profit Concentration: The concentration of profit among a limited group of customers suggests opportunities to expand profitability across the broader customer base.
 - Customer Segmentation Analysis: Detailed analysis in the Customer Segmentation Analysis section provides insights into specific issues and potential solutions for each customer segment.
 
-#### 7. Top 5 Best-selling products
+#### 5.7. Top 5 Best-selling products
 
 <img src="https://i.imgur.com/9QyQGML.png">
 
@@ -628,7 +628,7 @@ On the other hand, FIREBALL CINNAMON WHISKEY 100.0 (ml) is considered the produc
 Some suggestions in this analysis are as follows:
 - Consider discontinuing the import of liquors belonging to the bottom 25% group (those selling less than 36 bottles in a year) to save warehousing costs.
 - Conduct an in-depth analysis of the top-selling liquors (ingredients, flavor, price, etc.) to find similar products to import in order to maximize profit per product.
-#### 8. Product Consumption Trends
+#### 5.8. Product Consumption Trends
 <img src="https://i.imgur.com/uZS5cRc.png">
 
 The analysis of the relationship between product diversity, profit, and product sales reveals a relatively weak correlation between these variables. This suggests that product diversification does not significantly drive profit growth. Instead, customer preference appears to be concentrated on a limited subset of products, roughly one-fifth of the total product portfolio.
@@ -647,7 +647,7 @@ The analysis suggests that focusing on popular product categories, such as VODKA
 - Consumer Attraction: Analyze the characteristics that attract consumers to these popular product categories to identify common preferences and trends.
 - Product Diversification: Utilize insights from consumer preferences to expand the product portfolio with similar offerings, catering to a wider range of customer tastes and interests.
 - Profit Optimization: Focus on optimizing the profitability of popular product categories by implementing effective pricing strategies, targeted marketing campaigns, and efficient inventory management.
-#### 9. Liquor market in the state of Iowa
+#### 5.9. Liquor market in the state of Iowa
 
 <img src="https://i.imgur.com/1bRK5HQ.png">
 
@@ -662,7 +662,7 @@ Polk County is located in the U.S. state of Iowa. According to the 2020 census, 
 Profit is indeed influenced by geographical location. In central districts with high population density and a good standard of living, a large portion of stores are distributed to meet the high demand for living needs. The concentration of stores in these "Gold" areas drives sales and increases profits in a positive linear relationship.
 
 However, retail/wholesale prices are not geographically dependent. The correlation coefficients are only at an average level, indicating that we maintain relatively stable selling prices that are not overly influenced by external factors. This is also a good sign for customer retention.
-#### 10. Conclusion
+#### 5.10. Conclusion
 
 **Positive Trends**
 - Seasonal Revenue Growth: Revenue experiences seasonal growth in summer and winter. Profit margins remain consistently high at 33% throughout the year.
