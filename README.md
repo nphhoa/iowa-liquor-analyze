@@ -1,7 +1,10 @@
 # Iowa Liquor Sales Analysis and Customer Segmentation
+
+<img src="https://iowacapitaldispatch.com/wp-content/uploads/2020/09/alcohol-liqueur-drink-bottle-distilled-beverage-alcoholic-beverage-1561047-pxhere.com_-1024x683.jpg">
+
 ## 🔍 Project Overview
 ### 📌 Objective
-- This is a project based on wholesale liquor sales data for the state of Iowa in the United States with more than 2.6 million transactions in 2023. The Iowa government purchases liquor from suppliers and then distributes it to all retail or wholesale entities in the state. As a data analyst, I see this as a business operation issue for the Iowa state government to carry out the entire project.
+- This is a project based on wholesale liquor sales data for the state of Iowa in the United States with more than 3,908,305 transactions from 1/1/2023 to 30/6/2024. The Iowa government purchases liquor from suppliers and then distributes it to all retail or wholesale entities in the state. As a data analyst, I see this as a business operation issue for the Iowa state government to carry out the entire project.
 
 - This project focuses on in-depth analysis of the Iowa wholesale liquor market, providing insights into purchasing trends, customer segments, and sales performance. This project aims to help the Iowa state government in particular make data-driven decisions and optimize its business strategy. At the same time, it can also be considered a sample analysis for individuals or businesses involved in the alcohol industry for their own business purposes.
 
